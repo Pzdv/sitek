@@ -1,0 +1,12 @@
+D:\Desktop\решение ситек\SITEK\Parser\bin\Debug\net6.0\Parser.deps.json
+D:\Desktop\решение ситек\SITEK\Parser\bin\Debug\net6.0\Parser.dll
+D:\Desktop\решение ситек\SITEK\Parser\bin\Debug\net6.0\Parser.pdb
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.csproj.AssemblyReference.cache
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.AssemblyInfoInputs.cache
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.AssemblyInfo.cs
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.csproj.CoreCompileInputs.cache
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.dll
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\refint\Parser.dll
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\Parser.pdb
+D:\Desktop\решение ситек\SITEK\Parser\obj\Debug\net6.0\ref\Parser.dll

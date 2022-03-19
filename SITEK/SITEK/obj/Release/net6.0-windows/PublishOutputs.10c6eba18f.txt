@@ -1,0 +1,7 @@
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\SITEK.exe
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\SITEK.dll
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\SITEK.deps.json
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\SITEK.runtimeconfig.json
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\SITEK.pdb
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\Parser.dll
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\publish\Parser.pdb

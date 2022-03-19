@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SITEK/1.0.0": {
+        "dependencies": {
+          "Parser": "1.0.0"
+        },
+        "runtime": {
+          "SITEK.dll": {}
+        }
+      },
+      "Parser/1.0.0": {
+        "runtime": {
+          "Parser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SITEK/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Parser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
