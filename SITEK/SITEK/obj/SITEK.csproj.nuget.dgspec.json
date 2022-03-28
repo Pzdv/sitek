@@ -4,6 +4,21 @@
     "D:\\Desktop\\решение ситек\\SITEK\\SITEK\\SITEK.csproj": {}
   },
   "projects": {
+    "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj",
+        "projectName": "RtfWriter",
+        "projectPath": "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj",
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net45": {}
+      }
+    },
     "D:\\Desktop\\решение ситек\\SITEK\\Parser\\Parser.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -90,6 +105,9 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
+              "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj": {
+                "projectPath": "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj"
+              },
               "D:\\Desktop\\решение ситек\\SITEK\\Parser\\Parser.csproj": {
                 "projectPath": "D:\\Desktop\\решение ситек\\SITEK\\Parser\\Parser.csproj"
               }

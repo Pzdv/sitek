@@ -18,3 +18,5 @@ D:\Desktop\решение ситек\SITEK\SITEK\obj\Debug\net6.0-windows\ref\SI
 D:\Desktop\решение ситек\SITEK\SITEK\bin\Debug\net6.0-windows\Parser.dll
 D:\Desktop\решение ситек\SITEK\SITEK\bin\Debug\net6.0-windows\Parser.pdb
 D:\Desktop\решение ситек\SITEK\SITEK\obj\Debug\net6.0-windows\SITEK.csproj.CopyComplete
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Debug\net6.0-windows\RtfWriter.dll
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Debug\net6.0-windows\RtfWriter.pdb

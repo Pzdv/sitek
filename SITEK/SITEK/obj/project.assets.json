@@ -11,6 +11,15 @@
         "runtime": {
           "bin/placeholder/Parser.dll": {}
         }
+      },
+      "RtfWriter/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/RtfWriter.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RtfWriter.dll": {}
+        }
       }
     }
   },
@@ -19,11 +28,17 @@
       "type": "project",
       "path": "../Parser/Parser.csproj",
       "msbuildProject": "../Parser/Parser.csproj"
+    },
+    "RtfWriter/1.0.0": {
+      "type": "project",
+      "path": "../../netrtfwriter-1.0.0/RtfWriter/RtfWriter.csproj",
+      "msbuildProject": "../../netrtfwriter-1.0.0/RtfWriter/RtfWriter.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Parser >= 1.0.0"
+      "Parser >= 1.0.0",
+      "RtfWriter >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -58,6 +73,9 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
+            "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj": {
+              "projectPath": "D:\\Desktop\\решение ситек\\netrtfwriter-1.0.0\\RtfWriter\\RtfWriter.csproj"
+            },
             "D:\\Desktop\\решение ситек\\SITEK\\Parser\\Parser.csproj": {
               "projectPath": "D:\\Desktop\\решение ситек\\SITEK\\Parser\\Parser.csproj"
             }

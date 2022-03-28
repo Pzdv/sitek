@@ -31,7 +31,7 @@
             this.rkkButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.saveAsTxtButton = new System.Windows.Forms.Button();
+            this.saveAsRtfButton = new System.Windows.Forms.Button();
             this.rkkLabel = new System.Windows.Forms.Label();
             this.appealLabel = new System.Windows.Forms.Label();
             this.appealButton = new System.Windows.Forms.Button();
@@ -62,15 +62,15 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // saveAsTxtButton
+            // saveAsRtfButton
             // 
-            this.saveAsTxtButton.Location = new System.Drawing.Point(713, 415);
-            this.saveAsTxtButton.Name = "saveAsTxtButton";
-            this.saveAsTxtButton.Size = new System.Drawing.Size(75, 23);
-            this.saveAsTxtButton.TabIndex = 1;
-            this.saveAsTxtButton.Text = "Save as txt";
-            this.saveAsTxtButton.UseVisualStyleBackColor = true;
-            this.saveAsTxtButton.Click += new System.EventHandler(this.SaveAsTxtButton_Click);
+            this.saveAsRtfButton.Location = new System.Drawing.Point(713, 415);
+            this.saveAsRtfButton.Name = "saveAsRtfButton";
+            this.saveAsRtfButton.Size = new System.Drawing.Size(75, 23);
+            this.saveAsRtfButton.TabIndex = 1;
+            this.saveAsRtfButton.Text = "Save as rtf";
+            this.saveAsRtfButton.UseVisualStyleBackColor = true;
+            this.saveAsRtfButton.Click += new System.EventHandler(this.SaveAsRtfButton_Click);
             // 
             // rkkLabel
             // 
@@ -119,6 +119,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Responsible,
@@ -130,29 +131,29 @@
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(587, 313);
             this.dataGridView1.TabIndex = 7;
-            this.dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.Columns[0].Width = 250;
-            dataGridView1.SortCompare += DataGridView1_SortCompare;
-
+            this.dataGridView1.TopLeftHeaderCell.Value = "№ п.п.";
+            this.dataGridView1.RowsAdded += DataGridView1_RowsAdded;
+            this.dataGridView1.Sorted += DataGridView1_Sorted;
+            this.dataGridView1.SortCompare += DataGridView1_SortCompare;
             // 
             // Responsible
             // 
-            this.Responsible.HeaderText = "Name";
+            this.Responsible.HeaderText = "Ответственный исполнитель";
             this.Responsible.Name = "Name";
             // 
             // RKK
             // 
-            this.RKK.HeaderText = "RKK";
+            this.RKK.HeaderText = "Количество неисполненных входящих документов";
             this.RKK.Name = "RKK";
             // 
             // Appeals
             // 
-            this.Appeals.HeaderText = "Appeals";
+            this.Appeals.HeaderText = "Количество неисполненных письменных обращений граждан";
             this.Appeals.Name = "Appeals";
             // 
             // Total
             // 
-            this.Total.HeaderText = "Total";
+            this.Total.HeaderText = "Общее количество документов и обращений";
             this.Total.Name = "Total";
             // 
             // fillButton
@@ -196,7 +197,7 @@
             this.Controls.Add(this.appealLabel);
             this.Controls.Add(this.appealButton);
             this.Controls.Add(this.rkkLabel);
-            this.Controls.Add(this.saveAsTxtButton);
+            this.Controls.Add(this.saveAsRtfButton);
             this.Controls.Add(this.rkkButton);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -206,12 +207,21 @@
 
         }
 
+        private void DataGridView1_Sorted(object sender, EventArgs e)
+        {
+            var rowCount = dataGridView1.RowCount;
+            for (int i = 0; i < rowCount; i++)
+            {
+                dataGridView1.Rows[i].HeaderCell.Value = (i + 1).ToString();
+            }
+        }
+
         #endregion
 
         private Button rkkButton;
         private OpenFileDialog openFileDialog1;
         private SaveFileDialog saveFileDialog1;
-        private Button saveAsTxtButton;
+        private Button saveAsRtfButton;
         private Label rkkLabel;
         private Label appealLabel;
         private Button appealButton;

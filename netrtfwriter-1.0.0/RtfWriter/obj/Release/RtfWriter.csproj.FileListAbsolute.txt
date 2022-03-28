@@ -1,0 +1,6 @@
+D:\Desktop\решение ситек\netrtfwriter-1.0.0\RtfWriter\bin\Release\RtfWriter.dll
+D:\Desktop\решение ситек\netrtfwriter-1.0.0\RtfWriter\bin\Release\RtfWriter.pdb
+D:\Desktop\решение ситек\netrtfwriter-1.0.0\RtfWriter\obj\Release\RtfWriter.csproj.AssemblyReference.cache
+D:\Desktop\решение ситек\netrtfwriter-1.0.0\RtfWriter\obj\Release\RtfWriter.csproj.CoreCompileInputs.cache
+D:\Desktop\решение ситек\netrtfwriter-1.0.0\RtfWriter\obj\Release\RtfWriter.dll
+D:\Desktop\решение ситек\netrtfwriter-1.0.0\RtfWriter\obj\Release\RtfWriter.pdb

@@ -7,8 +7,8 @@ namespace SITEK
 {
     public partial class Form1 : Form
     {
-        private string rkkPath;
-        private string appealsPath;
+        private string rkkPath = null!;
+        private string appealsPath = null!;
         private readonly DateTime startedTime;
 
         public Form1()
@@ -152,7 +152,7 @@ namespace SITEK
             e.Handled = true;
         }
 
-        private void SaveAsTxtButton_Click(object sender, EventArgs e)
+        private void SaveAsRtfButton_Click(object sender, EventArgs e)
         {
             SaveFile();
         }
@@ -162,37 +162,21 @@ namespace SITEK
             saveFileDialog1.ShowDialog();
             var path = saveFileDialog1.FileName;
 
-            if (string.IsNullOrEmpty(path))
-            {
-                return;
-            }
-
             var extension = Path.GetExtension(path);
 
-            if (string.IsNullOrEmpty((extension)))
+            if(extension != ".rtf")
             {
-                path += ".txt";
+                path += ".rtf";
             }
 
-            using (var sw = new StreamWriter(path))
-            {
-                var header = string.Format(
-                        "{0, -40} {1, -10} {2, -10} {3, -10}", dataGridView1.Columns[0].Name, dataGridView1.Columns[1].Name,
-                                                            dataGridView1.Columns[2].Name, dataGridView1.Columns[3].Name);
-                sw.WriteLine(header);
-                sw.WriteLine();
-                foreach (DataGridViewRow row in dataGridView1.Rows)
-                {
-                    var line = string.Format(
-                        "{0, -40} {1, -10} {2, -10} {3, -10}", row.Cells[0].Value, row.Cells[1].Value,
-                                                               row.Cells[2].Value, row.Cells[3].Value);
+            var rtfWriter = new RtfWriter();
 
-                    sw.WriteLine(line);
-                }
+            rtfWriter.Save(path, dataGridView1, startedTime);
+        }
 
-                sw.WriteLine(Environment.NewLine);
-                sw.WriteLine($"Report date: {startedTime.Date:D}");
-            }
+        private void DataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            dataGridView1.Rows[e.RowIndex].HeaderCell.Value = (dataGridView1.Rows.Count - 1).ToString();
         }
     }
 }

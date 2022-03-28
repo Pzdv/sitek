@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser\Parser.csproj", "{1BE72D3E-1467-45CE-ADDF-48563077F34A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser", "Parser\Parser.csproj", "{1BE72D3E-1467-45CE-ADDF-48563077F34A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SITEK", "SITEK\SITEK.csproj", "{37A7D34B-C897-45F8-AD8A-D8D0AFAC9E40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SITEK", "SITEK\SITEK.csproj", "{37A7D34B-C897-45F8-AD8A-D8D0AFAC9E40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtfWriter", "..\netrtfwriter-1.0.0\RtfWriter\RtfWriter.csproj", "{591BCEB5-6B6F-4368-BE6C-F89F668F7DCB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{37A7D34B-C897-45F8-AD8A-D8D0AFAC9E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{37A7D34B-C897-45F8-AD8A-D8D0AFAC9E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{37A7D34B-C897-45F8-AD8A-D8D0AFAC9E40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591BCEB5-6B6F-4368-BE6C-F89F668F7DCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591BCEB5-6B6F-4368-BE6C-F89F668F7DCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591BCEB5-6B6F-4368-BE6C-F89F668F7DCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591BCEB5-6B6F-4368-BE6C-F89F668F7DCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

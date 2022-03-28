@@ -18,3 +18,5 @@ D:\Desktop\решение ситек\SITEK\SITEK\obj\Release\net6.0-windows\refi
 D:\Desktop\решение ситек\SITEK\SITEK\obj\Release\net6.0-windows\SITEK.pdb
 D:\Desktop\решение ситек\SITEK\SITEK\obj\Release\net6.0-windows\SITEK.genruntimeconfig.cache
 D:\Desktop\решение ситек\SITEK\SITEK\obj\Release\net6.0-windows\ref\SITEK.dll
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\RtfWriter.dll
+D:\Desktop\решение ситек\SITEK\SITEK\bin\Release\net6.0-windows\RtfWriter.pdb

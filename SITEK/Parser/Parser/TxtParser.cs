@@ -28,23 +28,6 @@ namespace SITEK.Parser
             return result;
         }
 
-        private static string FindName(string shortlyName, IEnumerable<string> lines)
-        {
-            var result = string.Empty;
-            foreach (var line in lines)
-            {
-                var lastName = shortlyName.Split(" ")[0];
-
-                var fullName = line.Split("\t")[0];
-                if (fullName.StartsWith(lastName))
-                {
-                    result = fullName;
-                    break;
-                }
-            }
-            return string.IsNullOrEmpty(result) ? shortlyName : result;
-        }
-
         private static IEnumerable<Employee> ParseLines(IEnumerable<string> lines, DocumentType docType)
         {
             var result = new List<Employee>();
@@ -55,14 +38,15 @@ namespace SITEK.Parser
 
                 if (splitResult[0] == "Климов Сергей Александрович")
                 {
-                    var shortlyName = splitResult[1].Split(";")[0].Replace("(Отв.)", "").Trim();
-                    var name = FindName(shortlyName, lines);
+                    var name = splitResult[1].Split(";")[0].Replace("(Отв.)", "").Trim();
                     var employee = new Employee { Name =  name};
                     result.Add(employee);
                 }
                 else
                 {
-                    var employee = new Employee { Name = splitResult[0] };
+                    var fio = splitResult[0].Split(" ");
+                    var name = fio[0] + $" {fio[1][0]}.{fio[2][0]}.";
+                    var employee = new Employee { Name = name };
                     result.Add(employee);
                 }
             }

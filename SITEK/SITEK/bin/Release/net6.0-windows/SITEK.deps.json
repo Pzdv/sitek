@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "SITEK/1.0.0": {
         "dependencies": {
-          "Parser": "1.0.0"
+          "Parser": "1.0.0",
+          "RtfWriter": "1.0.0"
         },
         "runtime": {
           "SITEK.dll": {}
@@ -17,6 +18,11 @@
       "Parser/1.0.0": {
         "runtime": {
           "Parser.dll": {}
+        }
+      },
+      "RtfWriter/1.0.0": {
+        "runtime": {
+          "RtfWriter.dll": {}
         }
       }
     }
@@ -28,6 +34,11 @@
       "sha512": ""
     },
     "Parser/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RtfWriter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
